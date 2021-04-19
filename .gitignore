@@ -2,3 +2,5 @@
 /node_modules
 /docs
 .vscode
+/node-red-contrib-fast-bandwidth.iml
+/.idea/
