@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('fast-bandwidth',{
+        category: 'network',
+        color: 'rgba(239,21,37,0.34)',
+        defaults: {
+            name: {value:"fast-bandwidth"},
+            upload: {value: true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "font-awesome/fa-bar-chart",
+        label: function() {
+            return this.name||"fast-bandwidth";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="fast-bandwidth">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-upload"><i class="fa fa-tag"></i> Measure Upload?</label>
+        <input type="checkbox" id="node-input-upload">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="fast-bandwidth">
+    <p>A node that checks your bandwidth via Fast.com. By default it will also check upload speed. Uncheck <i>upload</i>
+        to disable upload speed testing (which will make the test faster). </p>
+</script>
