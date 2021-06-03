@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-fast-bandwidth",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Test network bandwidth using Fast.com",
   "scripts": {
     "test": "mocha --timeout 40000"
@@ -18,18 +18,12 @@
     }
   },
   "dependencies": {
-    "chalk": "^2.4.2",
-    "deep-equal": "^1.0.1",
-    "delay": "^4.1.0",
-    "log-update": "^2.3.0",
-    "meow": "^5.0.0",
+    "delay": "^5.0.0",
     "ora": "^3.1.0",
-    "puppeteer": "^1.12.1",
-    "zen-observable": "^0.8.13"
+    "puppeteer": "^9.1.1",
+    "zen-observable": "^0.8.15"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
     "chai": "^4.3.4",
     "eslint": "^7.24.0",
     "mocha": "^8.3.2",
